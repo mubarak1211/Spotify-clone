@@ -1,0 +1,281 @@
+body{
+   background-color: black;
+   margin: 0;
+   color: white;
+   overflow: hidden;
+   font-family: "Sail", serif;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+
+    
+}
+.sidebar{
+    background-color: rgba(128, 128, 128, 0.2);
+    width: 300px;
+    margin: 2px;
+    border-radius: 1rem;
+   
+}
+.main-page{
+   
+    flex: 1;
+    margin: 2px;
+    border-radius: 1rem;
+    overflow: auto;
+   padding: 0rem 0.5rem;
+   background-color: rgba(128, 128, 128, 0.2);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+.nav{
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0.5rem 0.75rem;
+   
+}
+.nav-option{
+  line-height: 3rem;
+  opacity: 0.7;
+}
+  .nav-option:hover{
+  transition-duration: 0.2s ;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+    opacity: 1;
+
+}
+
+.nav-option a{
+    font-size: 1rem;
+}
+.nav-option img{
+    height: 1.2rem;
+    width: 1.5rem;
+}
+.library{
+  
+     height: 100%;
+     border-radius: 1rem;
+    
+
+   
+}
+.library .options{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 1rem;
+   line-height: 2.5rem;
+   padding: 0.5rem;
+   
+
+}
+.liboption{
+    color: white;
+   opacity: 0.7;
+}
+.liboption:hover{
+  opacity: 1;
+}
+
+.options img{
+    height: 1.2rem;
+    width: 1.5rem;
+} 
+.icons{
+   display: flex;
+   font-size: 1rem;
+
+}
+.icons i{
+   flex-direction: row;
+   padding: 1rem; 
+   opacity: 0.7;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    height: 10rem;
+    margin: 0.5rem;
+}
+.box:hover{
+    box-shadow: 1px 1px 4px white;
+}
+.box button{
+    border-radius: 1rem;
+    font-weight: 600;
+    border: none;
+    
+    
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2rem;
+    padding: 0.75rem 1rem;
+    z-index: 1;
+    border-radius: 2rem;
+
+}
+.badges button{
+    margin-right: 1rem;
+    border-radius: 1rem;
+    border: none;
+    width: fit-content;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+   
+   flex-wrap: wrap;
+    border-radius: 5px;
+    margin-left: 2rem;
+  
+}
+.card-container img{
+    width: 100%;
+    border-radius: 5px;
+
+
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.05);
+    padding: 0.5rem;
+    color: white;
+    width: 250px;
+    margin: 0.5rem;
+
+}
+p{
+    color: rgba(255, 255, 255, 0.8);
+}
+.card:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+    transition-duration: 0.05s;
+    transition-delay: 0.05s;
+    box-shadow:  grey;
+}
+.music-player{
+    height: 72px;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: black;
+    padding-right:2rem ;
+}
+footer{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.line{
+    border-top: 2px solid grey;
+    width: 100%;
+    height: 100%;
+   
+}
+.music-player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+   
+}
+.music-player i{
+    opacity: 0.7;
+}
+.music-player i:hover{
+    opacity: 1;
+}
+
+.album img{
+  height: 4rem;
+  width: 4rem;
+  margin-left: 2.5rem;
+}
+.album{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1.5;
+
+}
+.album p,b{
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+.album i{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.player{
+    display: flex;
+   flex-direction: column;
+    flex:3;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+   
+    
+}
+.player i{
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+.progress{
+   background-color: black;
+    color: white;
+    font-weight: 1rem;
+   height: 1rem;
+   
+   
+  
+}
+.progress-bar{
+   width: 500px;
+   cursor: pointer;
+}
+.player-option{
+    display: flex;
+    flex: 1.5;
+    justify-content: space-evenly;
+
+}
+.player-option i{
+    font-size: 1.2rem;
+    padding: 1.3rem ;
+  
+  
+}
+
